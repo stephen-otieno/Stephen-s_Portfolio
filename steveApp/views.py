@@ -20,3 +20,8 @@ def contacts(request):
 
         client.save()
     return redirect('/')
+
+def view_contacts(request):
+    contact =Contacts.objects.all()
+
+    return render(request,'view_contacts.html',{'contacts':contact})

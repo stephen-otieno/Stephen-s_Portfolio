@@ -59,6 +59,8 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li><a href="{% url 'clients' %}"><i class="bi bi-person navicon"></i> Admin</a></li>
+
           <ul>
             <li><a href="#">Website Development</a></li>
             <li><a href="#">Application Development</a></li>
@@ -505,7 +507,7 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="/contacts/" method="post" class="" data-aos="fade-up" data-aos-delay="200">
+            <form action="/contact/" method="post" class="" data-aos="fade-up" data-aos-delay="200">
 
                 {% csrf_token %}
 

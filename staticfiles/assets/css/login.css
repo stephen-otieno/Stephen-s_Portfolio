@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+.login {
+    width: 9cm;
+    height: 13cm;
+    background-color: #149DDDFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 3cm;
+
+}
+
+.btns {
+    color: white;
+    font-size: large;
+    background-color: #142ca6;
+    border-radius: 10px;
+    margin-right: 20px;
+
+}
+
+.btns:hover {
+    background-color:red ;
+}
+

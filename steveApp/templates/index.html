@@ -49,8 +49,7 @@
     <div class="social-links text-center">
       <a href="https://x.com/Engineerotienos" class="twitter"><i class="bi bi-twitter-x"></i></a>
       <a href="https://www.facebook.com/people/Stephen-Otieno/pfbid0YGH6NV4XGwoLQbVQRHBy6VjevgjvEmRX1ciQsexwmGvLU29t3VTkapjYruHmqhzBl/" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://ke.linkedin.com/in/stephen-otieno-9a2833306" class="linkedin"><i class="bi bi-linkedin"></i></a>
     </div>
 
     <nav id="navmenu" class="navmenu">
@@ -59,7 +58,6 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-        <li><a href="{% url 'clients' %}"><i class="bi bi-person navicon"></i> Admin</a></li>
 
           <ul>
             <li><a href="#">Website Development</a></li>
@@ -73,6 +71,8 @@
           </ul>
         </li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="{% url 'clients' %}"><i class="bi bi-person navicon"></i> Admin</a></li>
+
       </ul>
     </nav>
 
@@ -511,9 +511,10 @@
 
                 {% csrf_token %}
 
+
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2"><b>Your Name</b></label>
-                  <input type="text" name="client_name" id="name-field" class="form-control" placeholder="Enter your name">
+                  <input type="text" name="client_name" id="name-field" class="form-control" placeholder="Enter your name" required>
                 </div>
                 <br>
 
@@ -532,7 +533,7 @@
 
                 <div class="col-md-12 text-center">
 
-                  <button type="submit">Send Message</button>
+                  <button style="background-color: #149DDDFF; color: white;border-radius: 8px"  type="submit">Send Message</button>
                 </div>
 
             </form>
